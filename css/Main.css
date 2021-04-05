@@ -9,6 +9,9 @@
 /* bgColor  #0e0d0d
 fontColor  #e6e6e6
 hover     #cc4f51  */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Vazir";
   direction: rtl;
@@ -16,16 +19,16 @@ body {
   color: #e6e6e6;
   margin: 0;
 }
-.menu-container{
+.menu-container {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #0e0d0d;
   /* margin: 5px; */
 }
-.menu{
+.menu {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   /* position: absolute; */
   margin: 10px 20px;
@@ -33,7 +36,7 @@ body {
 .menuItems {
   list-style: none;
 }
-.menuItems li:hover{
+.menuItems li:hover {
   /* border: #cc4f51;
   border-style: solid;
   border-width: 0 0 3px 0; */
@@ -58,10 +61,58 @@ body {
   border-width: 0 0 3px 0;
 }
 
-.home img{
+.home img {
   /* position: fixed; */
   top: 0;
   z-index: -1;
   background-image: url(/img/homeBg.jpg);
   background-position: center;
+}
+
+.social {
+  margin-top: 10px;
+}
+.social a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.social a:hover {
+  color: #cc4f51;
+}
+
+.scroll-down {
+  transform: rotate(270deg);
+  position: absolute;
+  /* left: 10px;
+  bottom: 20px; */
+  top: 80vh;
+  
+}
+.scroll-down a {
+  color: white;
+  padding: 2px;
+  text-decoration: none;
+}
+.scroll-down a:hover{
+  border-style: solid;
+  border-width: 0 0 3px 0;}
+
+.scroll-donwn-effect {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  /* left: 0;
+  bottom: 0; */
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    -webkit-transform: translateX(-3);
+    transform: translateX(-3);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
 }
