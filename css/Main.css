@@ -14,4 +14,54 @@ body {
   direction: rtl;
   background-color: #0e0d0d;
   color: #e6e6e6;
+  margin: 0;
+}
+.menu-container{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0e0d0d;
+  /* margin: 5px; */
+}
+.menu{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  /* position: absolute; */
+  margin: 10px 20px;
+}
+.menuItems {
+  list-style: none;
+}
+.menuItems li:hover{
+  /* border: #cc4f51;
+  border-style: solid;
+  border-width: 0 0 3px 0; */
+}
+.menuItems li {
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 0px 10px 5px;
+  margin: 0px 0px 0px 20px;
+  height: 100%;
+  line-height: 40px;
+  vertical-align: center;
+}
+.menuItems a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+.menuItems a:hover {
+  border: #cc4f51;
+  border-style: solid;
+  border-width: 0 0 3px 0;
+}
+
+.home img{
+  /* position: fixed; */
+  top: 0;
+  z-index: -1;
+  background-image: url(/img/homeBg.jpg);
+  background-position: center;
 }
